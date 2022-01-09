@@ -1,25 +1,20 @@
+import React, { useState } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Room from './Room';
 
-function App() {
+function App () { // An object is coming from the props under the tag name which is equal to what is set in index
+
+  const [isLit, setLit] = useState(true);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+    <div>
+      <Room></Room>
     </div>
+
   );
+
 }
 
 export default App;
